@@ -3,8 +3,8 @@ import React from 'react'
 const Header = () => {
   return (
     <div>
-      <div class='ui divider horizontal'>
-        <div class='ui center aligned segment basic'>
+      <div className='ui divider horizontal'>
+        <div className='ui center aligned segment basic'>
           Markdown Previewer
         </div>
       </div>
