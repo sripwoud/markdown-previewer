@@ -1,24 +1,28 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 
-const Editor = () => {
-  const [content, setContent] = useState('')
+import { ContextProvider } from '../Context'
 
+const Editor = props => {
+  const [state, setState] = useState('')
   const handleChange = e => {
-    setContent(e.target.value)
+    props.onChange(e.target.value)
+    setState(e.target.value)
   }
 
   return (
-    <div className='ui segment'>
-      <h2 className='ui header'>Editor</h2>
-      <form className='ui form'>
-        <textarea
-          placeholder='Type markdown'
-          rows='10'
-          onChange={handleChange}
-          value={content}
-        />
-      </form>
-    </div>
+    <ContextProvider>
+      <div className='ui segment'>
+        <h2 className='ui header'>Editor</h2>
+        <form className='ui form'>
+          <textarea
+            placeholder='Type markdown'
+            rows='10'
+            onChange={handleChange}
+            value={state}
+          />
+        </form>
+      </div>
+    </ContextProvider>
   )
 }
 
