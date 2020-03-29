@@ -1,11 +1,16 @@
 import React from 'react'
 
 import Layout from './components/Layout'
+import Previewer from './components/Previewer'
+import Editor from './components/Editor'
 
 const App = () => {
   return (
     <div>
-      <Layout />
+      <Layout>
+        <Editor />
+        <Previewer />
+      </Layout>
     </div>
   )
 }
