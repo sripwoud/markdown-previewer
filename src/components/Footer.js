@@ -5,17 +5,16 @@ const Footer = () => {
     <div className='ui horizontal divider'>
       <div className='ui segment basic center aligned'>
         <p>
-         Developed with {' '}
-          <a href='https://reactjs.org/' target='_blank'>
-            <i
-              aria-hidden='true'
-              className='react icon large'
-            />
+          <a href='https://sripwoud.xyz/' target='_blank'>
+            sripwoud
           </a>
-         by {' '}
-          <a href='https://sripwoud.xyz' target='_blank'>
-               sripwoud
-          </a>
+            {' '} - {' '}
+            <a href='https://github.com/sripwoud/markdown-previewer' target='_blank'>
+                <i
+                    aria-hidden='true'
+                    className='github icon large'
+                />
+            </a>
         </p>
       </div>
     </div>
