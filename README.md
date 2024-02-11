@@ -1,6 +1,5 @@
 
 # FreeCodeCamp Frontend libraries certification: Markdown previewer project
-## [Live on Codepen](https://codepen.io/r1oga/full/XWboopj)
 ![Screenshot](./public/screenshot.png)
 ### Getting started: `yarn start`
 Runs the app in the development mode.<br />

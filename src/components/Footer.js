@@ -13,8 +13,8 @@ const Footer = () => {
             />
           </a>
          by {' '}
-          <a href='https://github.com/r1oga' target='_blank'>
-               @r1oga
+          <a href='https://sripwoud.xyz' target='_blank'>
+               sripwoud
           </a>
         </p>
       </div>
